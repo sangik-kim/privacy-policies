@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinyWins Privacy Policy — PapaCoder</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card: #1e293b;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --border: #334155;
+        --accent: #60a5fa;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    .back {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      font-size: 0.875rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .back:hover { text-decoration: underline; }
+    h1 {
+      margin: 0 0 0.25rem;
+      font-size: 1.875rem;
+      font-weight: 700;
+    }
+    .updated {
+      margin: 0 0 2rem;
+      color: var(--muted);
+      font-size: 0.9375rem;
+    }
+    h2 {
+      margin: 2rem 0 0.75rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    p { margin: 0 0 1rem; }
+    ul {
+      margin: 0 0 1rem;
+      padding-left: 1.25rem;
+    }
+    li { margin-bottom: 0.35rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 0 1rem;
+      font-size: 0.9375rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.625rem 0.75rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: var(--card);
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="index.html">&larr; All privacy policies</a>
+
+    <header>
+      <h1>TinyWins Privacy Policy</h1>
+      <p class="updated"><strong>Last updated:</strong> 11 July 2026</p>
+    </header>
+
+    <main>
+      <p>
+        TinyWins (“the App”) is a local-first sticker chart app for parents and children.
+        This policy describes what information the App handles and how it is used.
+      </p>
+
+      <h2>Summary</h2>
+      <ul>
+        <li>TinyWins does <strong>not</strong> require an account and does <strong>not</strong> send your family data to our servers.</li>
+        <li>Chart data stays on your device unless <strong>you</strong> export or share a backup.</li>
+        <li>We do not use advertising, analytics, or crash-reporting SDKs in Version 1.</li>
+      </ul>
+
+      <h2>Data stored on your device</h2>
+      <p>The App stores the following on the device (local database and secure storage):</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Child profile info</td>
+            <td>Child name, avatar, theme color, optional birthday</td>
+          </tr>
+          <tr>
+            <td>Chart &amp; habit data</td>
+            <td>Chart titles, goals, task names, sticker awards</td>
+          </tr>
+          <tr>
+            <td>Rewards</td>
+            <td>Reward titles, costs, redemption history, optional notes</td>
+          </tr>
+          <tr>
+            <td>App preferences</td>
+            <td>Theme, language, sound/haptics, last selected child</td>
+          </tr>
+          <tr>
+            <td>Device lock (optional)</td>
+            <td>Hashed PIN or pattern; biometric unlock uses the device OS</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        PIN / pattern values are stored as hashes in platform secure storage and are
+        <strong>not</strong> included in backup exports.
+      </p>
+
+      <h2>Data we do not collect on our servers</h2>
+      <p>
+        In Version 1, TinyWins has <strong>no backend</strong>. The App does not upload child profiles,
+        charts, stickers, rewards, or lock credentials to TinyWins servers.
+      </p>
+      <p>
+        There is no cloud sync, login, advertising identifier collection, or third-party analytics
+        in this version.
+      </p>
+
+      <h2>Backup export and import</h2>
+      <p>
+        You may optionally export a backup ZIP and save or share it (for example via Files, email,
+        or cloud apps you choose). That transfer is controlled by you and the apps you pick—not by
+        TinyWins servers.
+      </p>
+      <p>
+        Backups exclude device-lock secrets (PIN/pattern hashes). Anyone with your backup file can
+        restore chart data, so treat backups as private.
+      </p>
+
+      <h2>Permissions</h2>
+      <p>Depending on platform and features you enable, the App may use:</p>
+      <ul>
+        <li><strong>Biometrics / device credentials</strong> — optional parental device lock</li>
+        <li><strong>Vibration</strong> — optional haptic feedback</li>
+        <li><strong>File access / sharing</strong> — only when you export, save, or import a backup</li>
+      </ul>
+      <p>Release builds do not require Internet permission for core features.</p>
+
+      <h2>Children’s information</h2>
+      <p>
+        TinyWins is designed for <strong>parents/guardians</strong> to manage routines, with children
+        as secondary users of the sticker experience.
+      </p>
+      <p>
+        Child-related information (such as name and optional birthday) is stored
+        <strong>only on the device</strong> (and in backups you create). We do not knowingly collect
+        children’s data on our servers because we do not operate a collection backend in V1.
+      </p>
+
+      <h2>Data retention and deletion</h2>
+      <ul>
+        <li>Data remains on the device until you delete it in the App, clear app storage, or uninstall.</li>
+        <li>Uninstalling the App removes local App data (device backups you previously exported elsewhere are not deleted by uninstall).</li>
+        <li>Soft-deleted items may remain until cleaned up by App logic; clearing storage or uninstall fully removes the local database.</li>
+      </ul>
+
+      <h2>Future features</h2>
+      <p>
+        Later versions may add optional cloud sync or accounts. If that happens, this policy will be
+        updated before those features collect data remotely, and you will be able to choose whether
+        to use them.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For privacy questions about TinyWins, contact the developer via the Google Play store listing
+        contact details for this App, or visit
+        <a href="https://papacoder.dev" rel="noopener noreferrer">papacoder.dev</a>.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        We may update this policy when the App’s data practices change. The “Last updated” date at
+        the top will be revised accordingly.
+      </p>
+    </main>
+
+    <footer>
+      <p>
+        TinyWins is published by
+        <a href="https://papacoder.dev" rel="noopener noreferrer">PapaCoder</a>.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
